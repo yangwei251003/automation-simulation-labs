@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-11-10T15:00:48.6641979Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.TextGraphicList.GraphicList ID="0">
+    <AttributeList>
+      <ListRange>Decimal</ListRange>
+      <Mode>Simple</Mode>
+      <Name>Level150</Name>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <Hmi.TextGraphicList.GraphicListEntry ID="3" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>0</From>
+          <To>14</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_0</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="4" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>15</From>
+          <To>29</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_1</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="5" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>30</From>
+          <To>44</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_2</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="6" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>45</From>
+          <To>59</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_3</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="7" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>60</From>
+          <To>74</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_4</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="8" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>75</From>
+          <To>89</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_5</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="9" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>90</From>
+          <To>104</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_6</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="A" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>105</From>
+          <To>119</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_7</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="B" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>120</From>
+          <To>134</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_8</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="C" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>135</From>
+          <To>149</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_9</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="D" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>150</From>
+          <To>150</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Tank_10</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+    </ObjectList>
+  </Hmi.TextGraphicList.GraphicList>
+</Document>

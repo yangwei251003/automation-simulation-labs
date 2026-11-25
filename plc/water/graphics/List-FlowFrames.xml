@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-11-10T15:00:48.6641979Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.TextGraphicList.GraphicList ID="0">
+    <AttributeList>
+      <ListRange>Decimal</ListRange>
+      <Mode>Simple</Mode>
+      <Name>FlowFrames</Name>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <Hmi.TextGraphicList.GraphicListEntry ID="3" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>0</From>
+          <To>0</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Flow_0</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="4" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>1</From>
+          <To>1</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Flow_1</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="5" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>2</From>
+          <To>2</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Flow_2</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+      <Hmi.TextGraphicList.GraphicListEntry ID="6" CompositionName="Entries">
+        <AttributeList>
+          <DefaultEntry>false</DefaultEntry>
+          <EntryType>Range</EntryType>
+          <FlashingEnabled>false</FlashingEnabled>
+          <FlashingRate>Slow</FlashingRate>
+          <FlashTransparentColor>0, 0, 0</FlashTransparentColor>
+          <From>3</From>
+          <To>3</To>
+          <TransparentColor>0, 0, 0</TransparentColor>
+          <UseFlashTransparentColor>false</UseFlashTransparentColor>
+          <UseTransparentColor>false</UseTransparentColor>
+        </AttributeList>
+        <LinkList>
+          <Picture TargetID="@OpenLink">
+            <Name>Flow_3</Name>
+          </Picture>
+        </LinkList>
+      </Hmi.TextGraphicList.GraphicListEntry>
+    </ObjectList>
+  </Hmi.TextGraphicList.GraphicList>
+</Document>

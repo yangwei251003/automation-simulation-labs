@@ -1,0 +1,3 @@
+__pycache__/
+.venv/
+mcu/rs485/model_result.json

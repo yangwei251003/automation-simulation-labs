@@ -1,0 +1,1359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V17" />
+  <DocumentInfo>
+    <Created>2026-11-17T10:42:13.5498039Z</Created>
+    <ExportSetting>WithDefaults</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <OptionPackage>
+        <DisplayName>TIA Portal Version Control Interface</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Advanced</DisplayName>
+        <DisplayVersion>V17</DisplayVersion>
+      </Product>
+    </InstalledProducts>
+  </DocumentInfo>
+  <Hmi.Screen.Screen ID="0">
+    <AttributeList>
+      <ActiveLayer>0</ActiveLayer>
+      <BackColor>248, 249, 250</BackColor>
+      <GridColor>0, 0, 0</GridColor>
+      <Height>480</Height>
+      <Name>红绿灯</Name>
+      <Number>1</Number>
+      <Visible>true</Visible>
+      <Width>800</Width>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="HelpText">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>zh-CN</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <Hmi.Screen.ScreenLayer ID="3" CompositionName="Layers">
+        <AttributeList>
+          <Index>0</Index>
+          <Name />
+          <VisibleES>true</VisibleES>
+        </AttributeList>
+        <ObjectList>
+          <Hmi.Screen.TextField ID="4" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>50</Height>
+              <HorizontalAlignment>Left</HorizontalAlignment>
+              <Left>46</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>Title</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>24</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>210</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="5" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="6" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>28</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="7" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="8" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>红绿灯</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.Button ID="9" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>49, 62, 70</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BitNumber>0</BitNumber>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>49, 62, 70</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <CornerRadius>0</CornerRadius>
+              <CornerStyle>Round</CornerStyle>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Enabled>true</Enabled>
+              <FirstGradientColor>211, 211, 211</FirstGradientColor>
+              <FirstGradientOffset>14</FirstGradientOffset>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <FocusColor>0, 0, 0</FocusColor>
+              <FocusWidth>1</FocusWidth>
+              <ForeColor>255, 255, 255</ForeColor>
+              <Height>45</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <HorizontalPictureAlignment>Center</HorizontalPictureAlignment>
+              <HotKey>0</HotKey>
+              <Left>397</Left>
+              <MiddleGradientColor>128, 128, 128</MiddleGradientColor>
+              <Mode>Text</Mode>
+              <ObjectName>Start</ObjectName>
+              <PictureAreaBottomMargin>0</PictureAreaBottomMargin>
+              <PictureAreaLeftMargin>0</PictureAreaLeftMargin>
+              <PictureAreaRightMargin>0</PictureAreaRightMargin>
+              <PictureAreaTopMargin>0</PictureAreaTopMargin>
+              <PictureAutoSizing>StretchPicture</PictureAutoSizing>
+              <SecondGradientColor>169, 169, 169</SecondGradientColor>
+              <SecondGradientOffset>14</SecondGradientOffset>
+              <TabIndex>0</TabIndex>
+              <TextAreaBottomMargin>0</TextAreaBottomMargin>
+              <TextAreaLeftMargin>0</TextAreaLeftMargin>
+              <TextAreaRightMargin>0</TextAreaRightMargin>
+              <TextAreaTopMargin>0</TextAreaTopMargin>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>27</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <UseFirstGradient>false</UseFirstGradient>
+              <UseSecondGradient>false</UseSecondGradient>
+              <UseTwoHandOperation>false</UseTwoHandOperation>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <VerticalPictureAlignment>Middle</VerticalPictureAlignment>
+              <Width>102</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Event.Event ID="A" CompositionName="Events">
+                <AttributeList>
+                  <Name>Press</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Event.FunctionListEventHandler ID="B" CompositionName="EventHandler">
+                    <ObjectList>
+                      <Hmi.Event.FunctionListEntry ID="C" CompositionName="FunctionListEntries">
+                        <AttributeList>
+                          <Name>SetBit</Name>
+                          <Type>SystemFunction</Type>
+                        </AttributeList>
+                        <ObjectList>
+                          <Hmi.Event.FunctionListEntryParameter ID="D" CompositionName="Parameters">
+                            <AttributeList>
+                              <Name>Tag</Name>
+                            </AttributeList>
+                            <LinkList>
+                              <Value TargetID="@OpenLink">
+                                <Name>StartPB</Name>
+                              </Value>
+                            </LinkList>
+                          </Hmi.Event.FunctionListEntryParameter>
+                        </ObjectList>
+                      </Hmi.Event.FunctionListEntry>
+                    </ObjectList>
+                  </Hmi.Event.FunctionListEventHandler>
+                </ObjectList>
+              </Hmi.Event.Event>
+              <Hmi.Event.Event ID="F" CompositionName="Events">
+                <AttributeList>
+                  <Name>Release</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Event.FunctionListEventHandler ID="10" CompositionName="EventHandler">
+                    <ObjectList>
+                      <Hmi.Event.FunctionListEntry ID="11" CompositionName="FunctionListEntries">
+                        <AttributeList>
+                          <Name>ResetBit</Name>
+                          <Type>SystemFunction</Type>
+                        </AttributeList>
+                        <ObjectList>
+                          <Hmi.Event.FunctionListEntryParameter ID="12" CompositionName="Parameters">
+                            <AttributeList>
+                              <Name>Tag</Name>
+                            </AttributeList>
+                            <LinkList>
+                              <Value TargetID="@OpenLink">
+                                <Name>StartPB</Name>
+                              </Value>
+                            </LinkList>
+                          </Hmi.Event.FunctionListEntryParameter>
+                        </ObjectList>
+                      </Hmi.Event.FunctionListEntry>
+                    </ObjectList>
+                  </Hmi.Event.FunctionListEventHandler>
+                </ObjectList>
+              </Hmi.Event.Event>
+              <Hmi.Globalization.MultiLingualFont ID="13" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="14" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>17</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="15" CompositionName="HelpText">
+                <ObjectList>
+                  <MultilingualTextItem ID="16" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text />
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+              <MultilingualText ID="17" CompositionName="TextOff">
+                <ObjectList>
+                  <MultilingualTextItem ID="18" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>启动</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+              <MultilingualText ID="19" CompositionName="TextOn">
+                <ObjectList>
+                  <MultilingualTextItem ID="1A" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>启动</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.Button>
+          <Hmi.Screen.Button ID="1B" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>49, 62, 70</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BitNumber>0</BitNumber>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>49, 62, 70</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <CornerRadius>0</CornerRadius>
+              <CornerStyle>Round</CornerStyle>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Enabled>true</Enabled>
+              <FirstGradientColor>211, 211, 211</FirstGradientColor>
+              <FirstGradientOffset>14</FirstGradientOffset>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <FocusColor>0, 0, 0</FocusColor>
+              <FocusWidth>1</FocusWidth>
+              <ForeColor>255, 255, 255</ForeColor>
+              <Height>45</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <HorizontalPictureAlignment>Center</HorizontalPictureAlignment>
+              <HotKey>0</HotKey>
+              <Left>515</Left>
+              <MiddleGradientColor>128, 128, 128</MiddleGradientColor>
+              <Mode>Text</Mode>
+              <ObjectName>Stop</ObjectName>
+              <PictureAreaBottomMargin>0</PictureAreaBottomMargin>
+              <PictureAreaLeftMargin>0</PictureAreaLeftMargin>
+              <PictureAreaRightMargin>0</PictureAreaRightMargin>
+              <PictureAreaTopMargin>0</PictureAreaTopMargin>
+              <PictureAutoSizing>StretchPicture</PictureAutoSizing>
+              <SecondGradientColor>169, 169, 169</SecondGradientColor>
+              <SecondGradientOffset>14</SecondGradientOffset>
+              <TabIndex>1</TabIndex>
+              <TextAreaBottomMargin>0</TextAreaBottomMargin>
+              <TextAreaLeftMargin>0</TextAreaLeftMargin>
+              <TextAreaRightMargin>0</TextAreaRightMargin>
+              <TextAreaTopMargin>0</TextAreaTopMargin>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>27</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <UseFirstGradient>false</UseFirstGradient>
+              <UseSecondGradient>false</UseSecondGradient>
+              <UseTwoHandOperation>false</UseTwoHandOperation>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <VerticalPictureAlignment>Middle</VerticalPictureAlignment>
+              <Width>102</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Event.Event ID="1C" CompositionName="Events">
+                <AttributeList>
+                  <Name>Press</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Event.FunctionListEventHandler ID="1D" CompositionName="EventHandler">
+                    <ObjectList>
+                      <Hmi.Event.FunctionListEntry ID="1E" CompositionName="FunctionListEntries">
+                        <AttributeList>
+                          <Name>SetBit</Name>
+                          <Type>SystemFunction</Type>
+                        </AttributeList>
+                        <ObjectList>
+                          <Hmi.Event.FunctionListEntryParameter ID="1F" CompositionName="Parameters">
+                            <AttributeList>
+                              <Name>Tag</Name>
+                            </AttributeList>
+                            <LinkList>
+                              <Value TargetID="@OpenLink">
+                                <Name>StopPB</Name>
+                              </Value>
+                            </LinkList>
+                          </Hmi.Event.FunctionListEntryParameter>
+                        </ObjectList>
+                      </Hmi.Event.FunctionListEntry>
+                    </ObjectList>
+                  </Hmi.Event.FunctionListEventHandler>
+                </ObjectList>
+              </Hmi.Event.Event>
+              <Hmi.Event.Event ID="21" CompositionName="Events">
+                <AttributeList>
+                  <Name>Release</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Event.FunctionListEventHandler ID="22" CompositionName="EventHandler">
+                    <ObjectList>
+                      <Hmi.Event.FunctionListEntry ID="23" CompositionName="FunctionListEntries">
+                        <AttributeList>
+                          <Name>ResetBit</Name>
+                          <Type>SystemFunction</Type>
+                        </AttributeList>
+                        <ObjectList>
+                          <Hmi.Event.FunctionListEntryParameter ID="24" CompositionName="Parameters">
+                            <AttributeList>
+                              <Name>Tag</Name>
+                            </AttributeList>
+                            <LinkList>
+                              <Value TargetID="@OpenLink">
+                                <Name>StopPB</Name>
+                              </Value>
+                            </LinkList>
+                          </Hmi.Event.FunctionListEntryParameter>
+                        </ObjectList>
+                      </Hmi.Event.FunctionListEntry>
+                    </ObjectList>
+                  </Hmi.Event.FunctionListEventHandler>
+                </ObjectList>
+              </Hmi.Event.Event>
+              <Hmi.Globalization.MultiLingualFont ID="25" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="26" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>17</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="27" CompositionName="HelpText">
+                <ObjectList>
+                  <MultilingualTextItem ID="28" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text />
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+              <MultilingualText ID="29" CompositionName="TextOff">
+                <ObjectList>
+                  <MultilingualTextItem ID="2A" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>停止</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+              <MultilingualText ID="2B" CompositionName="TextOn">
+                <ObjectList>
+                  <MultilingualTextItem ID="2C" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>停止</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.Button>
+          <Hmi.Screen.Circle ID="2D" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>33</Height>
+              <Left>650</Left>
+              <ObjectName>RunLamp</ObjectName>
+              <Radius>16</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>33</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>33</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="2E" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="2F" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>Run</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="32" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="33" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>45, 170, 90</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.TextField ID="34" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>40</Height>
+              <HorizontalAlignment>Left</HorizontalAlignment>
+              <Left>690</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>RunLabel</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>29</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>62</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="35" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="36" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>15</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="37" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="38" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>运行</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.TextField ID="39" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>35</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <Left>350</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>NorthLabel</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>97</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>100</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="3A" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="3B" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>18</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="3C" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="3D" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>北侧</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.TextField ID="3E" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>35</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <Left>350</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>SouthLabel</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>413</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>100</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="3F" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="40" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>18</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="41" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="42" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>南侧</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.TextField ID="43" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>36</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <Left>198</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>WestLabel</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>254</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>70</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="44" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="45" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>18</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="46" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="47" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>西侧</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.TextField ID="48" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>248, 249, 250</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderBackColor>255, 255, 255</BorderBackColor>
+              <BorderColor>148, 163, 184</BorderColor>
+              <BorderWidth>0</BorderWidth>
+              <BottomMargin>0</BottomMargin>
+              <CornerRadius>0</CornerRadius>
+              <EdgeStyle>Solid</EdgeStyle>
+              <FitToLargest>false</FitToLargest>
+              <Flashing>None</Flashing>
+              <ForeColor>32, 45, 50</ForeColor>
+              <Height>36</Height>
+              <HorizontalAlignment>Center</HorizontalAlignment>
+              <Left>532</Left>
+              <LeftMargin>0</LeftMargin>
+              <ObjectName>EastLabel</ObjectName>
+              <RightMargin>0</RightMargin>
+              <TabIndex>-1</TabIndex>
+              <TextOrientation>Horizontal</TextOrientation>
+              <Top>254</Top>
+              <TopMargin>0</TopMargin>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <VerticalAlignment>Middle</VerticalAlignment>
+              <Width>70</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Globalization.MultiLingualFont ID="49" CompositionName="Font">
+                <ObjectList>
+                  <Hmi.Globalization.FontItem ID="4A" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <FontFamily>宋体</FontFamily>
+                      <FontSize>18</FontSize>
+                      <FontStyle>Regular</FontStyle>
+                    </AttributeList>
+                  </Hmi.Globalization.FontItem>
+                </ObjectList>
+              </Hmi.Globalization.MultiLingualFont>
+              <MultilingualText ID="4B" CompositionName="Text">
+                <ObjectList>
+                  <MultilingualTextItem ID="4C" CompositionName="Items">
+                    <AttributeList>
+                      <Culture>zh-CN</Culture>
+                      <Text><body><p>东侧</p></body></Text>
+                    </AttributeList>
+                  </MultilingualTextItem>
+                </ObjectList>
+              </MultilingualText>
+            </ObjectList>
+          </Hmi.Screen.TextField>
+          <Hmi.Screen.Circle ID="4D" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>324</Left>
+              <ObjectName>NorthRed</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>138</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="4E" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="4F" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Red</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="52" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="53" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>228, 56, 62</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="54" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>324</Left>
+              <ObjectName>SouthRed</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>361</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="55" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="56" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Red</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="58" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="59" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>228, 56, 62</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="5A" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>271</Left>
+              <ObjectName>WestRed</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>196</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="5B" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="5C" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Red</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="5F" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="60" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>228, 56, 62</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="61" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>483</Left>
+              <ObjectName>EastRed</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>196</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="62" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="63" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Red</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="65" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="66" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>228, 56, 62</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="67" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>377</Left>
+              <ObjectName>NorthYellow</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>138</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="68" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="69" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Yellow</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="6C" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="6D" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>255, 194, 44</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="6E" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>377</Left>
+              <ObjectName>SouthYellow</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>361</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="6F" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="70" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Yellow</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="72" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="73" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>255, 194, 44</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="74" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>271</Left>
+              <ObjectName>WestYellow</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>249</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="75" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="76" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Yellow</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="79" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="7A" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>255, 194, 44</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="7B" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>483</Left>
+              <ObjectName>EastYellow</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>249</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="7C" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="7D" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Yellow</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="7F" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="80" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>255, 194, 44</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="81" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>430</Left>
+              <ObjectName>NorthGreen</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>138</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="82" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="83" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Green</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="86" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="87" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>45, 170, 90</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="88" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>430</Left>
+              <ObjectName>SouthGreen</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>361</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="89" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="8A" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>NS_Green</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="8C" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="8D" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>45, 170, 90</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="8E" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>271</Left>
+              <ObjectName>WestGreen</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>302</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="8F" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="90" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Green</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="93" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="94" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>45, 170, 90</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+          <Hmi.Screen.Circle ID="95" CompositionName="ScreenItems">
+            <AttributeList>
+              <BackColor>218, 223, 226</BackColor>
+              <BackFillStyle>Solid</BackFillStyle>
+              <BorderColor>95, 106, 113</BorderColor>
+              <BorderWidth>1</BorderWidth>
+              <EdgeStyle>Solid</EdgeStyle>
+              <Flashing>None</Flashing>
+              <Height>47</Height>
+              <Left>483</Left>
+              <ObjectName>EastGreen</ObjectName>
+              <Radius>23</Radius>
+              <TabIndex>-1</TabIndex>
+              <Top>302</Top>
+              <UseDesignColorSchema>false</UseDesignColorSchema>
+              <Width>47</Width>
+            </AttributeList>
+            <ObjectList>
+              <Hmi.Dynamic.RangeAppearanceAnimation ID="96" CompositionName="Animations">
+                <AttributeList>
+                  <Name>RangeAppearanceAnimation</Name>
+                </AttributeList>
+                <ObjectList>
+                  <Hmi.Dynamic.TagElementTrigger ID="97" CompositionName="RangeTag">
+                    <LinkList>
+                      <Tag TargetID="@OpenLink">
+                        <Name>EW_Green</Name>
+                      </Tag>
+                    </LinkList>
+                  </Hmi.Dynamic.TagElementTrigger>
+                  <Hmi.Dynamic.Range ID="99" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>218, 223, 226</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>0</LowerLimit>
+                      <UpperLimit>0</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                  <Hmi.Dynamic.Range ID="9A" CompositionName="RangeValues">
+                    <AttributeList>
+                      <BackColor>45, 170, 90</BackColor>
+                      <FlashingType>No</FlashingType>
+                      <ForeColor>95, 106, 113</ForeColor>
+                      <LowerLimit>1</LowerLimit>
+                      <UpperLimit>1</UpperLimit>
+                    </AttributeList>
+                  </Hmi.Dynamic.Range>
+                </ObjectList>
+              </Hmi.Dynamic.RangeAppearanceAnimation>
+            </ObjectList>
+          </Hmi.Screen.Circle>
+        </ObjectList>
+      </Hmi.Screen.ScreenLayer>
+    </ObjectList>
+  </Hmi.Screen.Screen>
+</Document>

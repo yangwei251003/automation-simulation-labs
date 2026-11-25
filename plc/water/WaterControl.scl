@@ -1,0 +1,105 @@
+FUNCTION_BLOCK "WaterController"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+   VAR
+      Tick : IEC_TIMER;
+      phase : Int;
+   END_VAR
+   VAR_TEMP
+      amount : Int;
+   END_VAR
+BEGIN
+   // Educational simulated water quantities; no real actuator output.
+   #Tick.TON(IN := NOT #Tick.Q, PT := T#500ms);
+   IF "M1Reset" THEN
+      "M1Tank" := 0;
+      "M1Pond" := 0;
+      "M1Pump" := FALSE;
+      "M1Valve" := FALSE;
+      "M1MixerRun" := FALSE;
+      "M1MixFrame" := 0;
+      "M1Reset" := FALSE;
+   END_IF;
+   IF "M2Reset" THEN
+      "M2Reservoir" := 0;
+      "M2Tank" := 0;
+      "M2Truck" := 0;
+      "M2TruckPosition" := 0;
+      "M2GrassTotal" := 0;
+      "M2Pump" := FALSE;
+      "M2V1" := FALSE;
+      "M2V2" := FALSE;
+      "M2V3" := FALSE;
+      "M2Reset" := FALSE;
+   END_IF;
+   IF #Tick.Q THEN
+      #phase := 1 + (#phase MOD 3);
+      // Exercise 1: pump 15; transfer 10; mixer starts at 120.
+      IF "M1Pump" THEN
+         "M1Tank" := MIN(IN1 := 150, IN2 := "M1Tank" + 15);
+      END_IF;
+      IF "M1Valve" AND ("M1Tank" > 0) AND ("M1Pond" < 150) THEN
+         #amount := MIN(IN1 := 10, IN2 := "M1Tank", IN3 := 150 - "M1Pond");
+         "M1Tank" := "M1Tank" - #amount;
+         "M1Pond" := "M1Pond" + #amount;
+      END_IF;
+      IF "M1Pond" >= 120 THEN
+         "M1MixerRun" := TRUE;
+         "M1MixFrame" := 1 + ("M1MixFrame" MOD 4);
+      ELSE
+         "M1MixerRun" := FALSE;
+         "M1MixFrame" := 0;
+      END_IF;
+      // Exercise 2: reservoir fills by 20 until 120.
+      IF "M2Pump" THEN
+         "M2Reservoir" := MIN(IN1 := 120, IN2 := "M2Reservoir" + 20);
+         IF "M2Reservoir" >= 120 THEN "M2Pump" := FALSE; END_IF;
+      END_IF;
+      // Three outgoing branches conserve the simulated water quantity.
+      IF "M2V1" AND ("M2Reservoir" > 0) THEN
+         #amount := MIN(IN1 := 10, IN2 := "M2Reservoir");
+         "M2Reservoir" := "M2Reservoir" - #amount;
+         "M2GrassTotal" := MIN(IN1 := 30000, IN2 := "M2GrassTotal" + #amount);
+      END_IF;
+      IF "M2V2" AND ("M2Reservoir" > 0) AND ("M2Tank" < 100) THEN
+         #amount := MIN(IN1 := 10, IN2 := "M2Reservoir", IN3 := 100 - "M2Tank");
+         "M2Reservoir" := "M2Reservoir" - #amount;
+         "M2Tank" := "M2Tank" + #amount;
+      END_IF;
+      IF "M2V3" AND ("M2Reservoir" > 0) AND ("M2Truck" < 50) THEN
+         #amount := MIN(IN1 := 10, IN2 := "M2Reservoir", IN3 := 50 - "M2Truck");
+         "M2Reservoir" := "M2Reservoir" - #amount;
+         "M2Truck" := "M2Truck" + #amount;
+      END_IF;
+      IF "M2Truck" >= 50 THEN
+         "M2V3" := FALSE;
+         "M2TruckPosition" := MIN(IN1 := 10, IN2 := "M2TruckPosition" + 1);
+      END_IF;
+   END_IF;
+   "M1PumpFlow" := "M1Pump" AND ("M1Tank" < 150);
+   "M1ValveFlow" := "M1Valve" AND ("M1Tank" > 0) AND ("M1Pond" < 150);
+   "M2PumpFlow" := "M2Pump" AND ("M2Reservoir" < 120);
+   "M2Irrigate" := "M2V1" AND ("M2Reservoir" > 0);
+   "M2Reaction" := "M2V2" AND ("M2Reservoir" > 0) AND ("M2Tank" < 100);
+   "M2LoadFlow" := "M2V3" AND ("M2Reservoir" > 0) AND ("M2Truck" < 50);
+   "M2TruckMoving" := ("M2Truck" >= 50) AND ("M2TruckPosition" < 10);
+   IF "M1PumpFlow" THEN "M1PumpFrame" := #phase; ELSE "M1PumpFrame" := 0; END_IF;
+   IF "M1ValveFlow" THEN "M1ValveFrame" := #phase; ELSE "M1ValveFrame" := 0; END_IF;
+   IF "M2PumpFlow" THEN "M2PumpFrame" := #phase; ELSE "M2PumpFrame" := 0; END_IF;
+   IF "M2Irrigate" THEN "M2V1Frame" := #phase; ELSE "M2V1Frame" := 0; END_IF;
+   IF "M2Reaction" THEN "M2V2Frame" := #phase; ELSE "M2V2Frame" := 0; END_IF;
+   IF "M2LoadFlow" THEN "M2V3Frame" := #phase; ELSE "M2V3Frame" := 0; END_IF;
+END_FUNCTION_BLOCK
+
+DATA_BLOCK "WaterController_DB"
+{ S7_Optimized_Access := 'TRUE' }
+VERSION : 0.1
+"WaterController"
+BEGIN
+END_DATA_BLOCK
+
+ORGANIZATION_BLOCK "Main"
+VERSION : 0.1
+BEGIN
+   "WaterController_DB"();
+END_ORGANIZATION_BLOCK
